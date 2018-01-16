@@ -12,6 +12,7 @@ RUN ls -la
 RUN ls -la /home
 RUN curl -O https://storage.googleapis.com/golang/go1.9.2.linux-amd64.tar.gz
 RUN tar -xvf go1.9.2.linux-amd64.tar.gz
+RUN ls -la 
 #RUN ls -la /home/ubuntu
 #RUN ls -la /home/ubuntu/go-ethereum
 #RUN ls -la /home/ubuntu/go-ethereum/build
