@@ -7,6 +7,8 @@ https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/6874
 )](https://godoc.org/github.com/ethereum/go-ethereum)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ethereum/go-ethereum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+[![CircleCI](https://circleci.com/gh/MagnusTiberius/go-ethereum/tree/master.svg?style=svg)](https://circleci.com/gh/MagnusTiberius/go-ethereum/tree/master)
+
 Automated builds are available for stable releases and the unstable master branch.
 Binary archives are published at https://geth.ethereum.org/downloads/.
 
