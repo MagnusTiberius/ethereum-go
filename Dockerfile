@@ -14,10 +14,10 @@ RUN curl -O https://storage.googleapis.com/golang/go1.9.2.linux-amd64.tar.gz
 RUN tar -xvf go1.9.2.linux-amd64.tar.gz
 RUN ls -la 
 RUN mkdir /gort
-export PATH=$PATH:/go/bin
-export GOROOT=$HOME/gort
-export PATH=$PATH:$GOROOT/bin
-cd /go
+RUN export PATH=$PATH:/go/bin
+RUN export GOROOT=$HOME/gort
+RUN export PATH=$PATH:$GOROOT/bin
+RUN cd /go
 RUN ls -la 
 make geth
 go version
