@@ -17,7 +17,7 @@ RUN mkdir /gort
 RUN export PATH=$PATH:/go/bin
 RUN export GOROOT=/go
 RUN export PATH=$PATH:$GOROOT/bin
-RUN cd /go/bin
+RUN cd go/bin
 RUN ls -la 
 RUN go version
 RUN git clone https://github.com/MagnusTiberius/go-ethereum
