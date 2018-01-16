@@ -4,6 +4,7 @@ machine:
 
 dependencies:
   override:
+    - make geth
     - docker info
     - docker build --rm=false -t magnustiberius/etheriumgo .
 
