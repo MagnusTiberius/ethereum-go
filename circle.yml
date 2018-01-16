@@ -11,6 +11,7 @@ dependencies:
     - export PATH=$PATH:$GOROOT/bin
     - go version
     - make geth
+    - pwd
     - ls -la
     - docker info
     - docker build --rm=false -t magnustiberius/etheriumgo .
