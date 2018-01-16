@@ -15,7 +15,7 @@ RUN tar -xvf go1.9.2.linux-amd64.tar.gz
 RUN ls -la 
 RUN mkdir /gort
 RUN export PATH=$PATH:/go/bin
-RUN export GOROOT=$HOME/go
+RUN export GOROOT=/go
 RUN export PATH=$PATH:$GOROOT/bin
 RUN cd /go
 RUN ls -la 
