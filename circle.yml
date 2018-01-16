@@ -4,15 +4,15 @@ machine:
 
 dependencies:
   override:
-    #- curl -O https://storage.googleapis.com/golang/go1.9.2.linux-amd64.tar.gz
-    #- tar -xvf go1.9.2.linux-amd64.tar.gz
-    #- export PATH=$PATH:/go/bin
-    #- export GOROOT=$HOME/go
-    #- export PATH=$PATH:$GOROOT/bin
-    #- go version
-    #- make geth
-    #- pwd
-    #- ls -la
+    - curl -O https://storage.googleapis.com/golang/go1.9.2.linux-amd64.tar.gz
+    - tar -xvf go1.9.2.linux-amd64.tar.gz
+    - export PATH=$PATH:/go/bin
+    - export GOROOT=$HOME/go
+    - export PATH=$PATH:$GOROOT/bin
+    - go version
+    - make geth
+    - pwd
+    - ls -la
     - docker info
     - docker build --rm=false -t magnustiberius/etheriumgo .
 
