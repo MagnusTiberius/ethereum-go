@@ -19,8 +19,8 @@ RUN export GOROOT=$HOME/gort
 RUN export PATH=$PATH:$GOROOT/bin
 RUN cd /go
 RUN ls -la 
-make geth
-go version
+RUN go version
+RUN make geth
 #RUN ls -la /home/ubuntu
 #RUN ls -la /home/ubuntu/go-ethereum
 #RUN ls -la /home/ubuntu/go-ethereum/build
