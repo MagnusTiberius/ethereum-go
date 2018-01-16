@@ -9,7 +9,7 @@ dependencies:
     - export PATH=$PATH:/go/bin
     - export GOROOT=$HOME/go
     - export PATH=$PATH:$GOROOT/bin
-    - golang -version
+    - go -version
     - make geth
     - docker info
     - docker build --rm=false -t magnustiberius/etheriumgo .
