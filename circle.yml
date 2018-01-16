@@ -16,7 +16,7 @@ dependencies:
     - ls -la build
     - ls -la build/bin
     - docker info
-    - docker build --rm=false -t magnustiberius/etheriumgo .
+    - docker build --rm=false -t magnustiberius/ethereumgo .
 
 test:
   override:
@@ -28,5 +28,5 @@ deployment:
     commands:
       - docker info
       - docker login -e $DOCKERID -u $DOCKERUID -p $DOCKERIDPWD
-      - docker push magnustiberius/etheriumgo
+      - docker push magnustiberius/ethereumgo
 
