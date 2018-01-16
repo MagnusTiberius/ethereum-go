@@ -14,6 +14,7 @@ dependencies:
     - pwd
     - ls -la
     - ls -la build
+    - ls -la build/bin
     - docker info
     - docker build --rm=false -t magnustiberius/etheriumgo .
 
