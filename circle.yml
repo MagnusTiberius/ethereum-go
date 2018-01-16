@@ -18,7 +18,10 @@ dependencies:
     - docker info
     - docker build --rm=false -t magnustiberius/etheriumgo .
 
-
+test:
+  override:
+    - echo "This section is intentionally skipped."
+    
 deployment:
   hub:
     branch: master
