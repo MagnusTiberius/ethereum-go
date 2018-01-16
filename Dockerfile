@@ -3,7 +3,7 @@ FROM alpine:3.4
 
 RUN apk add --no-cache make gcc musl-dev linux-headers
 
-RUN apk add --no-cache ca-certificates curl
+RUN apk add --no-cache ca-certificates curl git
 
 #WORKDIR /home/ubuntu/go-ethereum
 
@@ -20,6 +20,8 @@ RUN export PATH=$PATH:$GOROOT/bin
 RUN cd /go
 RUN ls -la 
 RUN go version
+RUN git clone https://github.com/MagnusTiberius/go-ethereum
+RUN cd go-ethereum
 RUN make geth
 #RUN ls -la /home/ubuntu
 #RUN ls -la /home/ubuntu/go-ethereum
