@@ -5,7 +5,7 @@ RUN apk add --no-cache make gcc musl-dev linux-headers
 
 RUN apk add --no-cache ca-certificates
 
-WORKDIR /home/ubuntu/go-ethereum
+#WORKDIR /home/ubuntu/go-ethereum
 
 RUN pwd
 RUN ls -la 
