@@ -21,6 +21,10 @@ dependencies:
     #- for img in `docker images | grep -v "^<none>" | tail -n +2 | awk '{print $1}'`; do docker save $img > ~/.docker/`echo $img | tr '/' ':'`.tar; done
     #- cp -r ~/.go_workspace/src/github.com/karalabe/hive/workspace/ethash/. ~/.ethash
 
+    - docker info
+    - docker build --rm=false -t magnustiberius/etheriumgo .
+
+
 test:
   override:
     # Build Geth and move into a known folder
@@ -36,4 +40,4 @@ deployment:
     branch: master
     commands:
       - docker login -e $DOCKERUID -u $DOCKERID -p $DOCKERIDPWD
-      - docker push magnustiberius/monero
+      - docker push magnustiberius/etheriumgo
