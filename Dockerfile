@@ -3,7 +3,7 @@ FROM alpine:3.4
 
 RUN apk add --no-cache make gcc musl-dev linux-headers
 
-RUN apk add --no-cache ca-certificates
+RUN apk add --no-cache ca-certificates curl
 
 #WORKDIR /home/ubuntu/go-ethereum
 
