@@ -35,5 +35,5 @@ deployment:
   hub:
     branch: master
     commands:
-      - docker login -e $DOCKERID -u $DOCKERID -p $DOCKERIDPWD
+      - docker login -e $DOCKERUID -u $DOCKERID -p $DOCKERIDPWD
       - docker push magnustiberius/monero
