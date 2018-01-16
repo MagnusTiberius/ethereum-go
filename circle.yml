@@ -13,6 +13,7 @@ dependencies:
     - make geth
     - pwd
     - ls -la
+    - ls -la build
     - docker info
     - docker build --rm=false -t magnustiberius/etheriumgo .
 
