@@ -10,6 +10,10 @@ RUN apk add --no-cache ca-certificates
 RUN pwd
 RUN ls -la 
 RUN ls -la /home
+RUN ls -la /home/ubuntu
+RUN ls -la /home/ubuntu/go-ethereum
+RUN ls -la /home/ubuntu/go-ethereum/build
+RUN ls -la /home/ubuntu/go-ethereum/build/bin
 RUN cp build/bin/geth /usr/local/bin/
 
 EXPOSE 8545 8546 30303 30303/udp 30304/udp
